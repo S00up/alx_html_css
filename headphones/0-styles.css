@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'source sans pro';
-    min-height: 100vh;
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(fonts/SourceSansPro-Black.otf);
 }
 
-body::-webkit-scrollbar {
-    width: 10px;
+@font-face {
+    font-family: Source Sans Pro-ExtraLight;
+    src: url(fonts/SourceSansPro-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-Light;
+    src: url(fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-Bold;
+    src: url(fonts/SourceSansPro-Bold.otf);
 }
 
 
@@ -43,6 +54,7 @@ header nav ul li {
 
 header nav ul li :hover {
     color: #FF6565;
+    padding-bottom: 2em;
 }
 
 .hand1 {
@@ -119,11 +131,113 @@ main section.welcome .pros div .card img {
     height: 150px;
 }
 
-main section.welcome .pros div .card img[src="images/2.png"] {
+main section.welcome .pros div .card img[src="images/headphones_hero_1.jpg"] {
     border-radius: 50%;
 }
 
+main {
+    margin: 3em 0;
+}
+main section {
+    text-align: center;
+    font-weight: 200;
+    color: #071629;
+}
+main section h2 {
+    margin: 2em 0;
+    font-size: 32px;
+}
+main section .head-text {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 6em;
+}
+main section p {
+    line-height: 26px;
+    font-family: Source Sans Pro-Light;
+    font-weight: 700;
+}
 
+main section .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+main section .boxes .box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+main section .boxes .box img {
+    width: 67.59px;
+    height: 76.8px;
+    margin: 0 auto;
+}
+main section .boxes .box p {
+    font-size: 14px;
+    padding: 0 1em;
+}
+
+
+main section.our-results {
+    background: url("images/headphones_hero_2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0 6em;
+}
+
+.our-results {
+    text-align: center;
+}
+
+main section.our-results {
+    text-align: center;
+}
+
+main section.our-results {
+    /* background: url(assets/background2.png) no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4em 2em;
+}
+main section.our-results .boxes {
+    gap: 80px;
+}
+main section.our-results img {
+    width: 190px !important;
+    height: 190px !important;
+}
+
+.gracia1 {
+    font-family: Source Sans Pro-Bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+main section.gracia1 div {
+    text-align: center;
+    /* margin-bottom: 2em; */
+}
+
+main section .gracia1 .box {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: center;
+}
+
+main section .gracia1 .box img {
+    width: 67.59px;
+    height: 76.8px;
+    margin: 0 auto;
+}
+main section .gracia1 .box p {
+    font-size: 14px;
+    padding: 0 1em;
+}
 
 .firbut{
     background-color: #FF6565;
@@ -151,11 +265,58 @@ main section.welcome button:hover {
     border: 50px;
 }
 
+.shann{
+    padding-top: 100px;
+    /* padding-bottom: 5px ; */
+    text-align: center;
+    font-size: 30px;
+    color: black; 
+    font-family:Arial;
+}
 
+.w3-container input, textarea{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
 
+.w3-container{
+    background-color: white;
+    border: none;
+    padding: 40px;
+    text-align: center;
+    margin: 1em;
+}
 
+input[type=Name] {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 1em;
+}
 
-.secbut {
+input[type=Email] {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 1em;
+}
+
+input[type=YourMessage] {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 1em;
+    /* margin-left: 2em; */
+    margin-right: 5em;
+}
+
+.secbut1{
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.secbut{
     background-color: #FF6565;
     border: none;
     padding: 1em 1.5em;
@@ -167,6 +328,10 @@ main section.welcome button:hover {
     transition: .4s;
 }
 
+
+main section.good button:hover {
+    background-color: #FF6565;
+}
 
 footer {
     background-color: #071629;
